@@ -1,7 +1,7 @@
 from application import db
 
-class Character(db.Model):
+class Posts(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    artist_name = db.Column(db.String(50), nullable=False)
+    character_name = db.Column(db.String(50), nullable=False)
 
     
