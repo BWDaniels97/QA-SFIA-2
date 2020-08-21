@@ -8,6 +8,11 @@
         - target: 5000
           published: 5000
           protocol: tcp
+        environment:
+          SECRET_KEY: aujdhfouisnbfdbsedohgosiehdjgoshedpgnsdoia
+          DATABASE_URI: mysql+pymysql://root:1234@34.105.158.49/project2db
+         
+        
       service2:
         image: service2:latest      
         build: ./service2
@@ -29,4 +34,5 @@
         - target: 5003
           published: 5003
           protocol: tcp
+    
 ...   

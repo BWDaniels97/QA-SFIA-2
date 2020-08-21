@@ -10,8 +10,8 @@
     }
     
     .hero-image {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("fantasy-back.jpg");
-      height: 50%;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+      height: 100%;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -50,7 +50,9 @@
       <div class="hero-text">
         <h1 style="font-size:50px">Generate your hero</h1>
         <p>Click to generate a character</p>
-        <button>Generate</button>
+        <form action="{{ url_for('generatehero') }}">
+        <button type="submit">Generate hero</button>
+        </form>
       </div>
     </div>
     

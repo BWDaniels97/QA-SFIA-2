@@ -4,9 +4,9 @@ from application import app
 
 @app.route('/')
 
-@app.route('/get/city', methods=['GET'])
-def get_city():
+@app.route('/get/class', methods=['GET'])
+def get_class():
 
-    city = ['Olishull', 'Yharnam', 'Lothric', 'Bruma', 'Kvatch']
-    chosen = random.choice(city)
+    heroClass = ['Warrior', 'Hunter', 'Mage', 'Knight', 'Pyro']
+    chosen = random.choice(heroClass)
     return Response(chosen, mimetype='text/plain')
