@@ -1,8 +1,9 @@
 from application.models import Posts
-from flask import render_template
 from application import app, db
 from application.forms import PostForm
 from sqlalchemy import func
+from flask import render_template, redirect, url_for, request
+import requests
 
 @app.route('/')
 @app.route('/home')
@@ -19,10 +20,11 @@ def generate():
 
 @app.route('/generate/hero')
 def generatehero():
-    heroClass = Posts.query.filter_by(character_name.data).order_by(func.random()).first()
+    '''heroClass = Posts.query.filter_by(character_name.data).order_by(func.random()).first()'''
+    heroClass = 'Warrior' 
     city = requests.get('http://35.197.235.71:5001/get/city')
     race = requests.get('http://35.197.235.71:5002/get/race')
     
-    weapon = requests.post('http://35.197.235.71:5003/post/weapon', data=heroClass.text)
+    weapon = requests.post('http://35.197.235.71:5003/post/weapon', data=heroClass)
     
-    return render_template('generate.html', title='Generate', weapon=weapon.text, city=city.text, race=race.text, heroClass=heroClass.text)
+    return render_template('generate.html', title='Generate', weapon=weapon.text, city=city.text, race=race.text, heroClass=heroClass)

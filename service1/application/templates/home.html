@@ -1,6 +1,33 @@
+<body style="background-color:grey;">
 <h1>{{ title }}</h1>
 
 
 <form action="{{ url_for('generatehero') }}">
 	    <button type="submit" class="button">Generate hero</button>
     </form>
+</body>
+
+
+    <style>
+
+        .button {
+        
+        height: 300px;
+        width: 300px;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        border: 3px solid red;
+        }
+        
+        h1 {
+        text-align: center;
+        color: blanchedalmond;
+        background-color:black;
+        }
+        
+        </style>
+
