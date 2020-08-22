@@ -50,3 +50,17 @@ class TestResponse(TestBase):
 
         response = self.client.get(url_for('generate'))
         self.assertEqual(response.status_code, 200)
+
+
+    def test_postpage_view(self):
+
+        with requests_mock.mock() as g:
+            g.get("http://service2:5001/get/class", text="Warrior")
+            g.get("http://service3:5002/get/race", text="Human")
+            g.post("http://service4:5003/post/weapon", text="Axe")
+            response = self.client.get(url_for('generatehero'))
+            self.assertEqual(response.status_code, 200)
+
+
+
+
