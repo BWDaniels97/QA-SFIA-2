@@ -21,9 +21,9 @@ def generate():
 @app.route('/generate/hero', methods=['GET', 'POST'])
 def generatehero():
     
-    heroClass = requests.get('http://34.89.79.118:5001/get/class')
-    race = requests.get('http://34.89.79.118:5002/get/race')
-    weapon = requests.post('http://34.89.79.118:5003/post/weapon', data=heroClass.text)
+    heroClass = requests.get('http://service2:5001/get/class')
+    race = requests.get('http://service3:5002/get/race')
+    weapon = requests.post('http://service4:5003/post/weapon', data=heroClass.text)
 
     herodata = Posts(
                 character_class = heroClass.text,
