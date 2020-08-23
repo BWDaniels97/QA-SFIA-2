@@ -50,9 +50,9 @@
     
     <div class="hero-image">
       <div class="hero-text">
-        <h1 style="font-size:50px"> {{ hero.character_class }}</h1>
-        <h1 style="font-size:50px"> {{ hero.character_race }}</h1>
-        <h1 style="font-size:50px"> {{ hero.character_weapon }}</h1>
+        <h1 style="font-size:50px"> Class: {{ hero.character_class }}</h1>
+        <h1 style="font-size:50px"> Race: {{ hero.character_race }}</h1>
+        <h1 style="font-size:50px"> Weapon: {{ hero.character_weapon }}</h1>
         <form action="{{ url_for('generatehero') }}">
             <button type="submit">Generate hero</button>
             </form>
