@@ -1,12 +1,12 @@
 - hosts: all
   become: yes
   roles:
-          - common
+  - common
 - hosts: managers
   become: yes
   roles:
-          - manager
+  - manager
 - hosts: workers
   become: yes
   roles:
-          - worker
+  - worker
