@@ -1,0 +1,19 @@
+[managers]
+127.0.0.1	
+
+[managers:vars]
+ansible_user=bwdaniels97
+ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+ansible_ssh_private_key_file=/home/bwdaniels97/.ssh/id_rsa
+ansible_python_interpreter=/usr/bin/python3
+
+
+[workers]
+35.197.217.163
+
+
+[workers:vars]
+ansible_user=bwdaniels97
+ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+ansible_ssh_private_key_file=/home/bwdaniels97/.ssh/id_rsa
+ansible_python_interpreter=/usr/bin/python3
