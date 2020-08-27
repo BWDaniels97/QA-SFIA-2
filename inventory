@@ -1,5 +1,5 @@
 [managers]
-127.0.0.1	
+35.246.42.208
 
 [managers:vars]
 ansible_user=bwdaniels97
