@@ -1,5 +1,5 @@
 [managers]
-35.246.42.208
+35.189.107.29
 
 [managers:vars]
 ansible_user=bwdaniels97
