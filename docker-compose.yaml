@@ -9,8 +9,8 @@
           published: 5000
           protocol: tcp
         environment:
-          SECRET_KEY: aujdhfouisnbfdbsedohgosiehdjgoshedpgnsdoia
-          DATABASE_URI: mysql+pymysql://root:1234@34.105.158.49/project2db
+          SECRET_KEY: ${SECRET_KEY}
+          DATABASE_URI: ${DATABASE_URI}
          
         
       service2:
