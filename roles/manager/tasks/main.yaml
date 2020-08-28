@@ -10,3 +10,7 @@
   add_host:
     name: "token"
     value: "{{ swarm_info['swarm_facts']['JoinTokens']['Worker'] }}"
+    
+- git:
+    repo: https://github.com/BWDaniels97/QA-SFIA-2.git
+    dest: /home/bwdaniels97/
