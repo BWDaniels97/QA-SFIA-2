@@ -10,10 +10,17 @@ export TEST_SECRET_KEY=aujdhfouisnbfdbsedohgosiehdjgoshedpgnsdoia
 
 cd service1
 pytest --cov application
+cd ..
+
 cd service2
 pytest --cov
+cd ..
+
 cd service3
 pytest --cov
+cd ..
+
 cd service4
 pytest --cov
+cd ..
 
