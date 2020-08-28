@@ -32,7 +32,7 @@
 
 - name: "add user to the docker group"
   user:
-        name: "bwdaniels97"
+        name: "jenkins"
         group: docker
         state: present
 
