@@ -14,7 +14,7 @@ pipeline{
                         	sh "scripts/ansible.sh"
                 	}
             	}
-		stage ('install Docker'){
+		stage ('Push Docker'){
                         steps{
                                 sh "scripts/docker.sh"
                         }
