@@ -1,7 +1,6 @@
 - name: clone git 
   git:
     repo: https://github.com/BWDaniels97/QA-SFIA-2.git
-    dest: /home/
     update: yes
 
 - name: "make the swarm"
