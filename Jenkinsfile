@@ -3,12 +3,6 @@ pipeline{
 
 	stages{
 
-		stage ('install Docker'){
-                        steps{
-                                sh "scripts/docker.sh"
-                        }
-                }
-
 		stage ('Test application'){
 			steps{
 				sh "scripts/testing.sh"
@@ -20,6 +14,11 @@ pipeline{
                         	sh "scripts/ansible.sh"
                 	}
             	}
+		stage ('install Docker'){
+                        steps{
+                                sh "scripts/docker.sh"
+                        }
+                }
                 stage('Deploy application'){
                         steps{
                                 sh "scripts/deploy.sh"
