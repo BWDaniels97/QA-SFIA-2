@@ -1,5 +1,5 @@
 [managers]
-35.189.107.29
+35.197.217.163
 
 [managers:vars]
 ansible_user=jenkins
