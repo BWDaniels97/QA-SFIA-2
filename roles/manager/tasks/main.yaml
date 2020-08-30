@@ -1,0 +1,19 @@
+- name: clone git 
+  git:
+    repo: https://github.com/BWDaniels97/QA-SFIA-2.git
+    dest: /home/QA-SFIA-2
+    update: yes
+
+- name: "make the swarm"
+  docker_swarm:
+    state: present
+- name: "Get swarm info"
+  docker_swarm_info:
+  register: swarm_info
+
+        
+- name: "Get a join token"
+  add_host:
+    name: "token"
+    value: "{{ swarm_info['swarm_facts']['JoinTokens']['Worker'] }}"
+    

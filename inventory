@@ -1,0 +1,19 @@
+[managers]
+35.197.217.163
+
+[managers:vars]
+ansible_user=jenkins
+ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+ansible_ssh_private_key_file=/var/lib/jenkins/.ssh/id_rsa
+ansible_python_interpreter=/usr/bin/python3
+
+
+[workers]
+34.89.79.118
+
+
+[workers:vars]
+ansible_user=jenkins
+ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+ansible_ssh_private_key_file=/var/lib/jenkins/.ssh/id_rsa
+ansible_python_interpreter=/usr/bin/python3
