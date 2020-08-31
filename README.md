@@ -11,7 +11,7 @@
 * [Deployment](#deployment)
 * [Front End Design](#front-end-design)
 * [Testing](#testing)
-* [Whats Wrong](#whats-wrong)
+* [What's Wrong](#what's-wrong)
 * [Future Improvements](#future-improvements)
 * [Author](#author)
 
@@ -36,7 +36,7 @@ Main Objectives:
 
 ## My App Idea
 
-My idea was very simple and consisted of an app that, when used, generated a characters class, race and weapon.  I did this by using API's.  Specifically 3 separate API's, two of which I made get requests too, to acquire the race and class of the character.  Then one that I made a post request to, to get the weapon based on the characters class that was attained earlier. The data collected is then placed on to a database and is then shown on the webpage use SQLAlchemy queries. Below is a little diagram on how my app interacts with the API's.
+My idea was very simple and consisted of an app that, when used, generated a character's class, race and weapon.  I did this by using APIs.  Specifically 3 separate APIs, two of which I made get requests to, to acquire the race and class of the character.  Then one that I made a post request to, to get the weapon based on the character's class that was attained earlier. The data collected is then placed on to a database and is then shown on the webpage using an SQLAlchemy query. Below is a little diagram on how my app interacts with the APIs.
 
 <p align="center">
 <img src="Documents/app.jpeg" alt="ci" width="500"/>
@@ -44,7 +44,7 @@ My idea was very simple and consisted of an app that, when used, generated a cha
 
 ## Entity Relationship Diagram
 
-Below is a little entity relationship diagram that shows how my database was set out.  Because the minimul vaible product for this project only needed one database that is what I did.  This helped my keep my project simple so that I ciuld focus on completeing every aspect to a good standard.
+Below is a little entity relationship diagram that shows how my database was set out.  Because the minimal vaible product for this project only needed one database that is what I did.  This helped my keep my project simple so that I could focus on completeing every aspect to a good standard.
 
 <p align="center">
 <img src="Documents/ER.jpeg" alt="ci" width="300"/>
@@ -62,7 +62,7 @@ Here is a link to my Jira board: https://project-2-sfia.atlassian.net/secure/Rap
 
 ## Risk Analysis
 
-Below is a risk assessment that I carried out to help me identify the potential risks and problems that could arise whilst developing or after developing my project. By doing this I could then figure out ways of preventing these problems so that I am prepared if the ever do arise.
+Below is a risk assessment that I carried out to help me identify the potential risks and problems that could arise whilst developing or after developing my project. By doing this I could then figure out ways of preventing these problems so that I am prepared if they ever do arise.
 
 ### First Risk Assessment
 <p align="center">
@@ -101,13 +101,14 @@ Below is the CI Pipeline that describes my project.  The tools used for each sec
 
 ## Deployment
 
-To deploy of the app I utilised the automation feature that Jenkins provides.  I did this by using the pipeline feature to automate the use of Ansible and Docker. I also added a webhook so that after making a commit to my GitHub project, Jenkins will trigger a pipeline job. The pipeline uses a Jenkinsfile in the project to run the different stages of the pipeline.  This is because they are outlined in the Jenkinsfile. In order to simplify the Jenkinsfile, I split each step into separate scripts that handle a different stages of the pipeline. First, Jenkins will then run all my unit tests, and if they pass it will move on to the next stage.  The next stage will run my ansible playbook.  This configures my docker swarm manager and worker so that the app can be deployed onto them.  The next stage then logs in to docker hub and creates and pushes the images of the app to my dockerhub.  The final stage then deploys the app using docker stack.
+To deploy the app I utilised the automation features that Jenkins provides.  I did this by using the pipeline feature to automate the use of Ansible and Docker. I also added a webhook so that after making a commit to my GitHub project, Jenkins will trigger a pipeline job. The pipeline uses a Jenkinsfile in the project to run the different stages of the pipeline.  This is because they are outlined in the Jenkinsfile. In order to simplify the Jenkinsfile, I split each step into separate scripts that handle a different stages of the pipeline. First, Jenkins will then run all my unit tests, and if they pass, it will move on to the next stage.  The next stage will run my ansible playbook.  This configures my docker swarm manager and worker so that the app can be deployed onto them.  The next stage then logs in to docker hub and creates and pushes the images of the app to my dockerhub.  The final stage then deploys the app using docker stack.
 
 <p align="center">
 <img src="Documents/Jenkins.jpeg" alt="ci" width="500"/>
 </p>
 
-As seen above, when a stage fails it comes up red.  When this happened I check the console output to see what went wrong and then try and fix the problems.  Fixing the problem then leads to a successful build.
+As seen above, when a stage fails it comes up red.  When this happened I checked the console output to see what went wrong and then fixed the problems.  Fixing the problem then leads to a successful build.
+
 ## Front end Design
 
 
@@ -127,7 +128,7 @@ Pytest is used to run unit tests on the app. These are designed to assert that i
 
 For this project I decided not to run any integration testing. I did this because the MVP needed for passing this project didn't include integration testing so I made the choice of leaving it out to focus on the more important features that were needed to pass the project.
 
-For the unit testing I used the pytest --cov application --cov-report term-missing command to see the lines of my files that hadnt been covered by the tests. I could then target those lines by writing more tests.
+For the unit testing I used the (pytest --cov application --cov-report term-missing) command to see the lines of my files that hadn't been covered by the tests. I could then target those lines by writing more tests.
 
 ### Service one
 <p align="center">
@@ -144,7 +145,7 @@ For the unit testing I used the pytest --cov application --cov-report term-missi
 <img src="Documents/Service-4-test.jpeg" alt="ci" width="500"/>
 </p>
 
-## Whats Wrong
+## What's Wrong
 
 * There is approximately 8 seconds of downtime when an update is applied to the app.
 
@@ -153,7 +154,7 @@ For the unit testing I used the pytest --cov application --cov-report term-missi
 
 * One improvement I would like to make is adding integration testing onto the app. This will help test the app to a higher standard and make sure it is working fully before deployment.
 
-* Although I think the front end design is definitely better than las time, I do think it could be improved with the use of css.
+* Although I think the front end design is definitely better than last time, I do think it could be improved with the use of css.
 
  ## Author
  
