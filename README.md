@@ -84,6 +84,13 @@ PIC HERE OF JENKINS
 
 The images below show the design of my app:
 
+<p align="center">
+<img src="Documentation/homepage.jpeg" alt="ci" width="500"/>
+</p>
+
+<p align="center">
+<img src="Documentation/generatepage.jpeg" alt="ci" width="500"/>
+</p>
 
 ## Testing
 
