@@ -36,22 +36,48 @@ Main Objectives:
 
 ## My App Idea
 
+My idea was very simple and consisted of an app that, when used, generated a characters class, race and weapon.  I did this by using API's.  Spesifcally 3 seperate API's, two of which I made get requests too, to acuire the race and class of the character.  Then one that I made a post request to, to get the weapon based on the characters class that was attained earlier. The data collected is then placed on to a database and is then shown on the webpage use SQLAlchemy querys. Below is a little diagram on how my app interacts with the API's.
 
-
+PIC HERE
 
 ## Entity Relationship Diagram
 
+Below is a little entity relationship diagram that shows how my database was set out.  Because the minimul vaible product for this project only needed one database that is what I did.  This helped my keep my project simple so that I ciuld focus on completeing every aspect to a good standard.
+
+PIC HERE
 
 ## Jira Board
 
+I used Jira to plan out and keep track of my project. I used a Kanban board with full expansion on user stories, use cases and tasks needed to complete the project. It also helps keeping track of any issues or risks that I faced whilst completing the project.
+
+Here is a link to my Jira board: LINK HERE
 
 ## Risk Analysis
 
+Below is a risk assessment that I carried out to help me identify the potential risks and problems that could arrise whilst developing or after developing my project. By doing this I could then figure out ways of preventing these problems so that I am prepared if the ever do arrise.
+
+PIC HERE
 
 ## CI Pipeline 
 
+Below is the CI Pipeline that describes my project.  The tools used for each section are also detailed below.
+
+* Kanban Board: Jira
+* Version Control: Git/Github
+* CI Server: Jenkins
+* Configuration Management: Ansible
+* Cloud server: GCP virtual machines
+* Containerisation: Docker
+* Orchestration Tool: Docker Swarm
+* Reverse Proxy: NGINX
+
+PIC HERE
 
 ## Deployment
+
+To deploy of the app I utilised the automation feature that jenkins provides.  I did this by using the pipeline feature to automate the use of Ansible and Docker. I also added a webhook so that after making a commit to my GitHub project, Jenkins will trigger a pipeline job. The pipeline uses a Jenkinsfile in the project to run the different stages of the pipeline.  This is because they are outlined in the Jenkinsfile. In order to simplify the Jenkinsfile, I split each step into seperate scripts that handle a different stages of the pipeline. First, Jenkins will then run all my unit tests, and if they pass it will move on to the next stage.  The next stage will run my ansible playbook.  This configures my docker swarm manager and worker so that the app can be deployed onto them.  The next stage then logs in to docker hub and creates and pushes the images of the app to my dockerhub.  The final stage then deploys the app using docker stack.
+
+PIC HERE OF JENKINS
 
 ## Front end Design
 
@@ -61,14 +87,26 @@ The images below show the design of my app:
 
 ## Testing
 
+Pytest is used to run unit tests on the app. These are designed to assert that if a certain function is run correctly, the output should be a known value. Pytest produces coverage reports (Which you can see below) that show how much of the app the tests cover. In this case it was 100%.
 
+For this project I decided not to run any intergration testing. I did this because the MVP needed for passing this project didnt include intergration testing so I made the choice of leaving it out to focus on the more important features that were needed to pass the project.
+
+For the unit testing I used the pytest --cov application --cov-report term-missing command to see the lines of my files that hadnt been covered by the tests. I could then target those lines by writing more tests.
+
+PIC HERE
 
 ## Whats Wrong
+
+* At the minute I have sensetive data on my github.  This is okay for this project as there is no sensetive or private data in the database.  But if I were working on a project that handled private data or important security information I would definatly not push them to github.
+
+* There is approximatly 8 seconds of downtime when an update is applied to the app.
 
 
 ## Future Improvements
 
+* One improvement I would like to make is adding interation testing onto the app. This will help test the app to a higher standard and make sure it is working fully before deployment.
 
+* Another improvment I would like to implement is increased security.  I would do this by hiding all the varibles on my github.
 
  ## Author
  
