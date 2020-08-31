@@ -75,7 +75,10 @@ Below is the CI Pipeline that describes my project.  The tools used for each sec
 * Orchestration Tool: Docker Swarm
 * Reverse Proxy: NGINX
 
-PIC HERE
+
+<p align="center">
+<img src="Documents/Screen Shot 2020-08-31 at 18.12.12.png" alt="ci" width="500"/>
+</p>
 
 ## Deployment
 
