@@ -79,7 +79,9 @@ PIC HERE
 
 To deploy of the app I utilised the automation feature that jenkins provides.  I did this by using the pipeline feature to automate the use of Ansible and Docker. I also added a webhook so that after making a commit to my GitHub project, Jenkins will trigger a pipeline job. The pipeline uses a Jenkinsfile in the project to run the different stages of the pipeline.  This is because they are outlined in the Jenkinsfile. In order to simplify the Jenkinsfile, I split each step into seperate scripts that handle a different stages of the pipeline. First, Jenkins will then run all my unit tests, and if they pass it will move on to the next stage.  The next stage will run my ansible playbook.  This configures my docker swarm manager and worker so that the app can be deployed onto them.  The next stage then logs in to docker hub and creates and pushes the images of the app to my dockerhub.  The final stage then deploys the app using docker stack.
 
-PIC HERE OF JENKINS
+<p align="center">
+<img src="Documents/Jenkins.jpeg" alt="ci" width="500"/>
+</p>
 
 ## Front end Design
 
