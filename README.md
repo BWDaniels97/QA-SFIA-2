@@ -64,7 +64,15 @@ Here is a link to my Jira board: LINK HERE
 
 Below is a risk assessment that I carried out to help me identify the potential risks and problems that could arrise whilst developing or after developing my project. By doing this I could then figure out ways of preventing these problems so that I am prepared if the ever do arrise.
 
-PIC HERE
+### First Risk Assessment
+<p align="center">
+<img src="Documents/First_Risk.jpeg" alt="ci" width="500"/>
+</p>
+
+### Final Risk Assessment
+<p align="center">
+<img src="Documents/Final_Risk.jpeg" alt="ci" width="500"/>
+</p>
 
 ## CI Pipeline 
 
