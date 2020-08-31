@@ -45,7 +45,7 @@ PIC HERE
 Below is a little entity relationship diagram that shows how my database was set out.  Because the minimul vaible product for this project only needed one database that is what I did.  This helped my keep my project simple so that I ciuld focus on completeing every aspect to a good standard.
 
 <p align="center">
-<img src="Documents/ER.jpeg" alt="ci" width="500"/>
+<img src="Documents/ER.jpeg" alt="ci" width="300"/>
 </p>
 
 ## Jira Board
