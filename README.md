@@ -56,6 +56,10 @@ I used Jira to plan out and keep track of my project. I used a Kanban board with
 
 Here is a link to my Jira board: LINK HERE
 
+<p align="center">
+<img src="Documents/jira.jpeg" alt="ci" width="500"/>
+</p>
+
 ## Risk Analysis
 
 Below is a risk assessment that I carried out to help me identify the potential risks and problems that could arrise whilst developing or after developing my project. By doing this I could then figure out ways of preventing these problems so that I am prepared if the ever do arrise.
