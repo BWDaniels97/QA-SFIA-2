@@ -1,6 +1,6 @@
 - name: "Join a swarm"
   docker_swarm:
     state: join
-    remote_addrs: [ "35.197.217.163:2377" ]  
-    advertise_addr: "34.89.79.118"
+    remote_addrs: [ "35.246.42.208:2377" ]  
+    advertise_addr: "35.197.217.163"
     join_token: "{{ hostvars['token']['value'] }}"
