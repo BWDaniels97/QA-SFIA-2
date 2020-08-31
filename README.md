@@ -39,7 +39,7 @@ Main Objectives:
 My idea was very simple and consisted of an app that, when used, generated a characters class, race and weapon.  I did this by using API's.  Spesifcally 3 seperate API's, two of which I made get requests too, to acuire the race and class of the character.  Then one that I made a post request to, to get the weapon based on the characters class that was attained earlier. The data collected is then placed on to a database and is then shown on the webpage use SQLAlchemy querys. Below is a little diagram on how my app interacts with the API's.
 
 <p align="center">
-<img src="Documents/app.jpeg" alt="ci" width="300"/>
+<img src="Documents/app.jpeg" alt="ci" width="500"/>
 </p>
 
 ## Entity Relationship Diagram
@@ -47,7 +47,7 @@ My idea was very simple and consisted of an app that, when used, generated a cha
 Below is a little entity relationship diagram that shows how my database was set out.  Because the minimul vaible product for this project only needed one database that is what I did.  This helped my keep my project simple so that I ciuld focus on completeing every aspect to a good standard.
 
 <p align="center">
-<img src="Documents/ER.jpeg" alt="ci" width="500"/>
+<img src="Documents/ER.jpeg" alt="ci" width="300"/>
 </p>
 
 ## Jira Board
