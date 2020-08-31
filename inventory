@@ -1,5 +1,5 @@
 [managers]
-35.197.217.163
+project-2-manager
 
 [managers:vars]
 ansible_user=jenkins
@@ -9,7 +9,7 @@ ansible_python_interpreter=/usr/bin/python3
 
 
 [workers]
-34.89.79.118
+project-2-worker
 
 
 [workers:vars]
