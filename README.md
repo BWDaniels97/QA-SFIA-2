@@ -36,7 +36,7 @@ Main Objectives:
 
 ## My App Idea
 
-My idea was very simple and consisted of an app that, when used, generated a characters class, race and weapon.  I did this by using API's.  Specifically 3 separate API's, two of which I made get requests too, to acquire the race and class of the character.  Then one that I made a post request to, to get the weapon based on the characters class that was attained earlier. The data collected is then placed on to a database and is then shown on the webpage use SQLAlchemy queries. Below is a little diagram on how my app interacts with the API's.
+My idea was very simple and consisted of an app that, when used, generated a characters class, race and weapon.  I did this by using API's.  Specifically 3 separate API's, two of which I made get requests too, to acquire the race and class of the character.  Then one that I made a post request to, to get the weapon based on the characters class that was attained earlier. The data collected is then placed on to a database and is then shown on the webpage using an SQLAlchemy query. Below is a little diagram on how my app interacts with the API's.
 
 <p align="center">
 <img src="Documents/app.jpeg" alt="ci" width="500"/>
