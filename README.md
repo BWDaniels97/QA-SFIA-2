@@ -121,8 +121,6 @@ Service 4
 
 ## Whats Wrong
 
-* At the minute I have sensetive data on my github.  This is okay for this project as there is no sensetive or private data in the database.  But if I were working on a project that handled private data or important security information I would definatly not push them to github.
-
 * There is approximatly 8 seconds of downtime when an update is applied to the app.
 
 
@@ -130,7 +128,7 @@ Service 4
 
 * One improvement I would like to make is adding interation testing onto the app. This will help test the app to a higher standard and make sure it is working fully before deployment.
 
-* Another improvment I would like to implement is increased security.  I would do this by hiding all the varibles on my github.
+* Although I think the front end design is definitly better than las time, I do think it could be improved with the use of css.
 
  ## Author
  
