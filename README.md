@@ -54,7 +54,7 @@ Below is a little entity relationship diagram that shows how my database was set
 
 I used Jira to plan out and keep track of my project. I used a Kanban board with full expansion on user stories, use cases and tasks needed to complete the project. It also helps keeping track of any issues or risks that I faced whilst completing the project.
 
-Here is a link to my Jira board: LINK HERE
+Here is a link to my Jira board: https://project-2-sfia.atlassian.net/secure/RapidBoard.jspa?projectKey=S2&useStoredSettings=true&rapidView=1
 
 <p align="center">
 <img src="Documents/jira.jpeg" alt="ci" width="500"/>
