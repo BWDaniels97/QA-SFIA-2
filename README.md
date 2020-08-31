@@ -11,7 +11,7 @@
 * [Deployment](#deployment)
 * [Front End Design](#front-end-design)
 * [Testing](#testing)
-* [What's Wrong](#what's-wrong)
+* [Whats Wrong](#whats-wrong)
 * [Future Improvements](#future-improvements)
 * [Author](#author)
 
@@ -145,7 +145,7 @@ For the unit testing I used the (pytest --cov application --cov-report term-miss
 <img src="Documents/Service-4-test.jpeg" alt="ci" width="500"/>
 </p>
 
-## What's Wrong
+## Whats Wrong
 
 * There is approximately 8 seconds of downtime when an update is applied to the app.
 
