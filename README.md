@@ -36,7 +36,7 @@ Main Objectives:
 
 ## My App Idea
 
-My idea was very simple and consisted of an app that, when used, generated a characters class, race and weapon.  I did this by using API's.  Spesifcally 3 seperate API's, two of which I made get requests too, to acuire the race and class of the character.  Then one that I made a post request to, to get the weapon based on the characters class that was attained earlier. The data collected is then placed on to a database and is then shown on the webpage use SQLAlchemy querys. Below is a little diagram on how my app interacts with the API's.
+My idea was very simple and consisted of an app that, when used, generated a characters class, race and weapon.  I did this by using API's.  Specifically 3 separate API's, two of which I made get requests too, to acquire the race and class of the character.  Then one that I made a post request to, to get the weapon based on the characters class that was attained earlier. The data collected is then placed on to a database and is then shown on the webpage use SQLAlchemy queries. Below is a little diagram on how my app interacts with the API's.
 
 <p align="center">
 <img src="Documents/app.jpeg" alt="ci" width="500"/>
@@ -62,7 +62,7 @@ Here is a link to my Jira board: https://project-2-sfia.atlassian.net/secure/Rap
 
 ## Risk Analysis
 
-Below is a risk assessment that I carried out to help me identify the potential risks and problems that could arrise whilst developing or after developing my project. By doing this I could then figure out ways of preventing these problems so that I am prepared if the ever do arrise.
+Below is a risk assessment that I carried out to help me identify the potential risks and problems that could arise whilst developing or after developing my project. By doing this I could then figure out ways of preventing these problems so that I am prepared if the ever do arise.
 
 ### First Risk Assessment
 <p align="center">
@@ -101,13 +101,13 @@ Below is the CI Pipeline that describes my project.  The tools used for each sec
 
 ## Deployment
 
-To deploy of the app I utilised the automation feature that jenkins provides.  I did this by using the pipeline feature to automate the use of Ansible and Docker. I also added a webhook so that after making a commit to my GitHub project, Jenkins will trigger a pipeline job. The pipeline uses a Jenkinsfile in the project to run the different stages of the pipeline.  This is because they are outlined in the Jenkinsfile. In order to simplify the Jenkinsfile, I split each step into seperate scripts that handle a different stages of the pipeline. First, Jenkins will then run all my unit tests, and if they pass it will move on to the next stage.  The next stage will run my ansible playbook.  This configures my docker swarm manager and worker so that the app can be deployed onto them.  The next stage then logs in to docker hub and creates and pushes the images of the app to my dockerhub.  The final stage then deploys the app using docker stack.
+To deploy of the app I utilised the automation feature that Jenkins provides.  I did this by using the pipeline feature to automate the use of Ansible and Docker. I also added a webhook so that after making a commit to my GitHub project, Jenkins will trigger a pipeline job. The pipeline uses a Jenkinsfile in the project to run the different stages of the pipeline.  This is because they are outlined in the Jenkinsfile. In order to simplify the Jenkinsfile, I split each step into separate scripts that handle a different stages of the pipeline. First, Jenkins will then run all my unit tests, and if they pass it will move on to the next stage.  The next stage will run my ansible playbook.  This configures my docker swarm manager and worker so that the app can be deployed onto them.  The next stage then logs in to docker hub and creates and pushes the images of the app to my dockerhub.  The final stage then deploys the app using docker stack.
 
 <p align="center">
 <img src="Documents/Jenkins.jpeg" alt="ci" width="500"/>
 </p>
 
-As seen above, when a stage fails it comes up red.  When this happend I check the console output to see what went wrong and then try and fix the problems.  Fixing the problem then leads to a succsessful build.
+As seen above, when a stage fails it comes up red.  When this happened I check the console output to see what went wrong and then try and fix the problems.  Fixing the problem then leads to a successful build.
 ## Front end Design
 
 
@@ -125,7 +125,7 @@ The images below show the design of my app:
 
 Pytest is used to run unit tests on the app. These are designed to assert that if a certain function is run correctly, the output should be a known value. Pytest produces coverage reports (Which you can see below) that show how much of the app the tests cover. In this case it was 100%.
 
-For this project I decided not to run any intergration testing. I did this because the MVP needed for passing this project didnt include intergration testing so I made the choice of leaving it out to focus on the more important features that were needed to pass the project.
+For this project I decided not to run any integration testing. I did this because the MVP needed for passing this project didn't include integration testing so I made the choice of leaving it out to focus on the more important features that were needed to pass the project.
 
 For the unit testing I used the pytest --cov application --cov-report term-missing command to see the lines of my files that hadnt been covered by the tests. I could then target those lines by writing more tests.
 
@@ -146,14 +146,14 @@ For the unit testing I used the pytest --cov application --cov-report term-missi
 
 ## Whats Wrong
 
-* There is approximatly 8 seconds of downtime when an update is applied to the app.
+* There is approximately 8 seconds of downtime when an update is applied to the app.
 
 
 ## Future Improvements
 
-* One improvement I would like to make is adding interation testing onto the app. This will help test the app to a higher standard and make sure it is working fully before deployment.
+* One improvement I would like to make is adding integration testing onto the app. This will help test the app to a higher standard and make sure it is working fully before deployment.
 
-* Although I think the front end design is definitly better than las time, I do think it could be improved with the use of css.
+* Although I think the front end design is definitely better than las time, I do think it could be improved with the use of css.
 
  ## Author
  
