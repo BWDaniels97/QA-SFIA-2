@@ -103,7 +103,7 @@ For this project I decided not to run any intergration testing. I did this becau
 For the unit testing I used the pytest --cov application --cov-report term-missing command to see the lines of my files that hadnt been covered by the tests. I could then target those lines by writing more tests.
 
 <p align="center">
-<img src="Documents/service-1-test.jpeg" alt="ci" width="500"/>
+<img src="Documents/Service-1-test.jpeg" alt="ci" width="500"/>
 </p>
 
 ## Whats Wrong
