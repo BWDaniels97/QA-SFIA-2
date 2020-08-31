@@ -85,6 +85,7 @@ To deploy of the app I utilised the automation feature that jenkins provides.  I
 <img src="Documents/Jenkins.jpeg" alt="ci" width="500"/>
 </p>
 
+As seen above, when a stage fails it comes up red.  When this happend I check the console output to see what went wrong and then try and fix the problems.  Fixing the problem then leads to a succsessful build.
 ## Front end Design
 
 
