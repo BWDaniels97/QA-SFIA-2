@@ -66,12 +66,12 @@ Below is a risk assessment that I carried out to help me identify the potential 
 
 ### First Risk Assessment
 <p align="center">
-<img src="Documents/First_Risk.jpeg" alt="ci" width="500"/>
+<img src="Documents/First_Risk.jpeg" alt="ci" width="600"/>
 </p>
 
 ### Final Risk Assessment
 <p align="center">
-<img src="Documents/Final_Risk.jpeg" alt="ci" width="500"/>
+<img src="Documents/Final_Risk.jpeg" alt="ci" width="600"/>
 </p>
 
 ## CI Pipeline 
