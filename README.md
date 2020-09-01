@@ -23,9 +23,9 @@
 
 
 Main Objectives:
-* An Asana board (or equivalent Kanban board tech) with full expansion on tasks needed to complete the project.
+* Create a Jira board with full expansion on tasks needed to complete the project.
 * This could also provide a record of any issues or risks that you faced creating your project.
-* An Application fully integrated using the Feature-Branch model into a Version Control System which will subsequently be built through a CI server and deployed to a cloud-based virtual machine.
+* Create ann Application with fully integrated using the Feature-Branch model into a Version Control System which will subsequently be built through a CI server and deployed to a cloud-based virtual machine.
 * If a change is made to a code base, then Webhooks should be used so that Jenkins recreates and redeploys the changed application
 * The project must follow the Service-oriented architecture that has been asked for.
 * The project must be deployed using containerisation and an orchestration tool.
@@ -44,7 +44,7 @@ My idea was very simple and consisted of an app that, when used, generated a cha
 
 ## Entity Relationship Diagram
 
-Below is a little entity relationship diagram that shows how my database was set out.  Because the minimal vaible product for this project only needed one database that is what I did.  This helped my keep my project simple so that I could focus on completeing every aspect to a good standard.
+Below is a little entity relationship diagram that shows how my database was set out.  Because the minimal vaible product for this project only needed one database with one table, that is what I did.  This helped my keep my project simple so that I could focus on completeing every aspect to a good standard.
 
 <p align="center">
 <img src="Documents/ER.jpeg" alt="ci" width="300"/>
