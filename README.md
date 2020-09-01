@@ -74,6 +74,8 @@ Below is a risk assessment that I carried out to help me identify the potential 
 <img src="Documents/Final_Risk.jpeg" alt="ci" width="600"/>
 </p>
 
+https://docs.google.com/spreadsheets/d/1-MKvFuQP8BeSYGmQQizG_1pLZbNR3g76TLwB31paiEg/edit?usp=sharing
+
 ## CI Pipeline 
 
 Below is the CI Pipeline that describes my project.  The tools used for each section are also detailed below.
